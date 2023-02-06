@@ -17,6 +17,9 @@
                 redirect('user/home');
             }
         }
+        public function test(){
+            echo "12345";
+        }
         public function home(){
             var_dump($this->session);
             $data=array();
