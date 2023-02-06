@@ -2,7 +2,6 @@
     defined('BASEPATH') OR exit('No direct script access allowed');
     require('SessionController.php');
     Class User extends SessionController{
-        // Class User extends CI_Controller{
 
         public function check(){
             $this->load->model('User_model');
@@ -15,7 +14,7 @@
             else{
                 $this->session->set_userdata('admin',$result);
                 var_dump($this->session);
-                // redirect('user/home');
+                redirect('user/home');
             }
         }
         public function home(){
